@@ -1,0 +1,614 @@
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+.topRow {
+  padding-top: 50px;
+}
+
+.upperNavTitle1 {
+  font-family: "Fira Code", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  padding-top: 18px;
+}
+
+.upperNavTitle2 {
+  font-family: "Fira Code", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  padding-top: 18px;
+}
+
+.lowerNavTitle1 {
+  font-family: "Fira Code", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  padding-top: 18px;
+}
+
+.lowerNavTitle2 {
+  font-family: "Fira Code", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  padding-top: 18px;
+}
+
+.navButton {
+  background-color: rgb(71, 146, 71);
+  border-style: ridge;
+  border-color: rgb(180, 255, 180);
+  margin-right: 20px;
+  margin-top: -30px;
+  padding: 5px;
+  text-align: center;
+  height: 80px;
+}
+
+.navLink {
+  color: rgb(138, 255, 157);
+}
+
+.navLink:hover {
+  color: lime;
+}
+
+
+@media (max-width: 1200px) {
+  .upperNavTitle2 {
+    padding-top: 3px;
+  }
+}
+
+.title {
+  font-family: "Sixtyfour", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: rgb(71, 146, 71)
+}
+
+.titleDescription {
+  color: rgb(71, 146, 71);
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.listTitle {
+  font-family: "VT323", sans-serif;
+  color: rgb(71, 146, 71);
+}
+
+.list {
+  font-family: "VT323", sans-serif;
+  color: rgb(71, 146, 71);
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+.listText {
+  padding-bottom: 5px;
+  padding-left: 65px;
+}
+
+.unorderedListItem {
+  font-size: 25px;
+  padding-bottom: 13px;
+}
+
+.educationList ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.educationList ul li {
+  position: relative;
+  padding-left: 40px;
+  list-style: none;
+}
+
+/* Invisible space that's made and styled */
+.educationList ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/listStar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.image2 {
+  border-radius: 50%;
+}
+
+.creditsText {
+  color: rgb(71, 146, 71);
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.githubLogo {
+  padding-bottom: 7px;
+}
+
+.openSourceText {
+  color: rgb(161, 241, 161);
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(138, 138, 255);
+  font-size: 45px;
+  margin-bottom: 100px;
+}
+
+.githubText {
+  background-image: linear-gradient(to right, #000000, #ffffff);
+  background-clip: text;
+  color: transparent;
+}
+
+.appleText {
+  background-image: linear-gradient(to right, #000000, #ffffff);
+  background-clip: text;
+  color: transparent;
+}
+
+.openAiText {
+  background-image: linear-gradient(to right, #0ea983, #ffffff);
+  background-clip: text;
+  color: transparent;
+}
+
+.googleText {
+  background-image: linear-gradient(to left,
+      #eb4131,
+      #fabd14,
+      #2fa953,
+      #4286f2);
+
+  background-size: 300% auto;
+  /* Makes the animation look smooth */
+  background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  animation: googleGradient 8s linear infinite;
+}
+
+@keyframes googleGradient {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: -300% center;
+  }
+}
+
+
+.metaText {
+  background-image: linear-gradient(to right, #0c65de, #0e80f9);
+  background-clip: text;
+  color: transparent;
+}
+
+.netflixText {
+  background-image: linear-gradient(to right, #e50814, #000000);
+  background-clip: text;
+  color: transparent;
+}
+
+body {
+  background-image: url("../images/linuxStartup.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+.temp {
+  color: white;
+}
+
+.math {
+  padding-left: 80px;
+}
+
+.math2 {
+  padding-left: 75px;
+}
+
+.math3 {
+  padding-left: 75px;
+}
+
+.appleLogo {
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 20px;
+}
+
+.appleLogoBig {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.openAiLogo {
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 20px;
+}
+
+.openAiLogoBig {
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+.googleLogo {
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 20px;
+}
+
+.googleLogoBig {
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+.metaLogo {
+  padding-bottom: 2px;
+  width: 25px;
+}
+
+.metaLogoBig {
+  padding-bottom: 2px;
+  width: 200px;
+}
+
+.netflixLogo {
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 20px;
+}
+
+.netflixLogoBig {
+  padding-bottom: 2px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+.leftRow {
+  text-align: left;
+}
+
+.rightRow {
+  text-align: right;
+}
+
+.salaryTable {
+  background-color: #3870a480;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.salaryTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.salaryTable th,
+.salaryTable td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.salaryColumnWide,
+.salaryValueWide {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.salaryOperator {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #ffffff;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.salaryValue {
+  text-align: center;
+}
+
+.salaryTableRow {
+  margin-left: 10px;
+}
+
+.benefitsGrid {
+  width: 100%;
+}
+
+.salaryTableText {
+  font-family: "VT323", sans-serif;
+  color: #479247;
+  font-size: 22px;
+}
+
+@media (max-width: 575.98px) {
+  .salaryTableText {
+    font-size: 16px;
+  }
+
+  .salaryTable th,
+  .salaryTable td {
+    padding: 8px;
+  }
+
+  .salaryColumnWide,
+  .salaryValueWide {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.typewriter {
+  opacity: 0;
+  position: relative;
+}
+
+.typewriter.show {
+  opacity: 1;
+}
+
+.typewriter::after {
+  content: "";
+  width: 2px;
+  height: 1em;
+  background: #479247;
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink .7s infinite;
+}
+
+.appleText.typewriter::after {
+  content: "";
+  width: 2px;
+  height: 1em;
+  background: #ffffff;
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink .7s infinite;
+}
+
+.openAiText.typewriter::after {
+  content: "";
+  width: 2px;
+  height: 1em;
+  background: #0ea983;
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink .7s infinite;
+}
+
+.googleText.typewriter::after {
+  content: "";
+  width: 2px;
+  height: 1em;
+  background-image: linear-gradient(to left,
+      #eb4131,
+      #fabd14,
+      #2fa953,
+      #4286f2);
+  background-size: 300% auto;
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink .7s infinite;
+  animation: googleGradient 8s linear infinite, blink 0.7s infinite;
+}
+
+.metaText.typewriter::after {
+  content: "";
+  width: 2px;
+  height: 1em;
+  background: #0e80f9;
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink .7s infinite;
+}
+
+.netflixText.typewriter::after {
+  content: "";
+  width: 2px;
+  height: 1em;
+  background: #e50814;
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink .7s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.slideInRight {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease-out;
+}
+
+.slideInLeft {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+
+.slideInShow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.highlight-flash {
+  animation: flashHighlight 1s ease-out;
+}
+
+@keyframes flashHighlight {
+  0% {
+    background-color: rgba(255, 255, 0, 0.6);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.appleAnchor {
+  color: #ffffff;
+}
+
+.openAIAnchor {
+  color: #0ea983;
+}
+
+.googleAnchor {
+  background-image: linear-gradient(to left,
+      #eb4131,
+      #fabd14,
+      #2fa953,
+      #4286f2);
+
+  background-size: 300% auto;
+  /* Makes the animation look smooth */
+  background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  animation: googleGradient 8s linear infinite;
+}
+
+.facebookAnchor {
+  color: #0c65de;
+}
+
+.netflixAnchor {
+  color: #e50814;
+}
+
+.appleHeading {
+  font-size: 60px;
+}
+
+.openAIHeading {
+  font-size: 60px;
+}
+
+.googleHeading {
+  font-size: 60px;
+}
+
+.facebookHeading {
+  font-size: 60px;
+}
+
+.netflixHeading {
+  font-size: 60px;
+}
+
+.appleParagraph {
+  font-size: 25px;
+}
+
+.openAIParagraph {
+  font-size: 25px;
+}
+
+.googleParagraph {
+  font-size: 25px;
+}
+
+.facebookParagraph {
+  font-size: 25px;
+}
+
+.netflixParagraph {
+  font-size: 25px;
+}
+
+.tickerWrapper {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000;
+  /* change if you want */
+  padding: 10px 0;
+}
+
+.tickerTrack {
+  display: inline-flex;
+  /* so groups sit next to each other */
+}
+
+/* Each “message” */
+.ticker-group span {
+  display: inline-block;
+  margin-right: 80px;
+  /* spacing between texts */
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* The animation class we’ll toggle on/off */
+.tickerAnimate {
+  animation: tickerSlide 15s linear infinite;
+}
+
+/* Moves the whole track left by 50% (one group width) */
+@keyframes tickerSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
