@@ -38,5 +38,5 @@ const observer = new IntersectionObserver((entries) => {
     threshold: 0.1
 });
 
-// For each of these tickers line 42, tell observer to well, observe them.
+// For each of these tickers line below this comment, tell observer to well, observe them.
 tickers.forEach(ticker => observer.observe(ticker));

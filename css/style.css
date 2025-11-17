@@ -121,7 +121,6 @@ body {
   list-style: none;
 }
 
-/* Invisible space that's made and styled */
 .educationList ul li::before {
   content: "";
   position: absolute;
@@ -186,7 +185,6 @@ body {
       #4286f2);
 
   background-size: 300% auto;
-  /* Makes the animation look smooth */
   background-clip: text;
   background-clip: text;
 
@@ -517,7 +515,6 @@ body {
       #4286f2);
 
   background-size: 300% auto;
-  /* Makes the animation look smooth */
   background-clip: text;
   background-clip: text;
 
@@ -584,45 +581,52 @@ a:hover {
   color: #9bff9b;
 }
 
-.tickerWrapper {
-  font-family: "Sixtyfour", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background: #000;
-  /* change if you want */
-  padding: 10px 0;
-}
-
-.tickerTrack {
-  display: inline-flex;
-  /* so groups sit next to each other */
-}
-
-/* Each “message” */
 .ticker-group span {
   display: inline-block;
   margin-right: 80px;
-  /* spacing between texts */
   font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
 }
 
-/* The animation class we’ll toggle on/off */
-.tickerAnimate {
-  animation: tickerSlide 15s linear infinite;
+.tickerWrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Sixtyfour", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Moves the whole track left by 50% (one group width) */
+.tickerTrack {
+  display: inline-flex;
+}
+
+.tickerAnimate {
+  animation: tickerSlide 35s linear infinite;
+}
+
+.ticker-group {
+  display: inline-flex;
+}
+
 @keyframes tickerSlide {
   0% {
     transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-90%);
   }
+}
+
+.toast-container {
+  z-index: 9999;
+}
+
+.why {
+  padding-top: 7px;
+}
+
+.rounderImage {
+  border-radius: 50%;
 }

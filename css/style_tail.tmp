@@ -1,0 +1,40 @@
+  overflow: hidden;
+  white-space: nowrap;
+  background: #000;
+  /* change if you want */
+  padding: 10px 0;
+}
+
+.tickerTrack {
+  display: inline-flex;
+  /* so groups sit next to each other */
+}
+
+/* Each “message” */
+.ticker-group span {
+  display: inline-block;
+  margin-right: 80px;
+  /* spacing between texts */
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* The animation class we’ll toggle on/off */
+.tickerAnimate {
+  animation: tickerSlide 15s linear infinite;
+}
+
+/* Moves the whole track left by 50% (one group width) */
+@keyframes tickerSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.toast-container {
+  z-index: 9999;

@@ -1,0 +1,35 @@
+- @media
+This right here? Yeah basically I can just say if it's a certain window size like 1200 pixels,
+the style will change depending on if 1200 pixels is the max or minimum width, it's pretty easy to understand.
+
+
+- @Keyframes
+These kinda just rely off the animation style property so for example,
+one of my properties were "animation: tickerSlide 15s linear infinite;" the animation is called
+tickerSlide, its duration is 15 seconds, the movement type is linear, meaning it moving at a
+consistent pace, and the last one is how much times it does it which is infinite soo yeah
+
+The actual @keyframes is kind of like @media not really but here let me elaborate,
+so if the animation duration is at 0% we can use this little property called "transform: translateX(0)"
+it translates across the X axis obviously and I have no clue why it's called transform but that's the
+term that's used for it so I'm not gonna complain that much, yeah but when it's 100%, the end result will be
+transform: translateX(-50%), and this is where @keyframes does its magic as @keyframes makes it so it slowly
+translates the X axis from 0 to -50%, and it will continue doing this forever due to me setting how many times
+the animation will repeat to be infinite
+
+Code Source for Keyframes Explanation:
+
+.tickerAnimate {
+  animation: tickerSlide 35s linear infinite;
+}
+
+
+@keyframes tickerSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-90%);
+  }
+}

@@ -39,6 +39,7 @@
 
     <div class="container">
 
+        <!-- Ticker Start -->
         <div class="tickerWrapper tickerForJavaScript">
             <div class="tickerTrack tickerAnimate">
 
@@ -52,21 +53,20 @@
                     <span>OPEN SOURCED ON GITHUB <img src="images/githubLogo.jpg" width="35"
                             alt="Logo for Github, an online repository service" class="githubLogo">
                         <a href="https://github.com/OfiicialDukahsmom/careerWebsite" target="_blank">HERE</a></span>
-                </div>
-
-                <div class="ticker-group">
                     <span>OPEN SOURCED ON GITHUB <img src="images/githubLogo.jpg" width="35"
                             alt="Logo for Github, an online repository service" class="githubLogo">
                         <a href="https://github.com/OfiicialDukahsmom/careerWebsite" target="_blank">HERE</a></span>
                     <span>OPEN SOURCED ON GITHUB <img src="images/githubLogo.jpg" width="35"
                             alt="Logo for Github, an online repository service" class="githubLogo">
                         <a href="https://github.com/OfiicialDukahsmom/careerWebsite" target="_blank">HERE</a></span>
-                    <span>WHY ARE YOU STILL <a href="https://github.com/OfiicialDukahsmom/careerWebsite"
-                            target="_blank">HERE</a></span>
+                    <span class="why">WHY ARE YOU STILL
+                        <a href="https://github.com/OfiicialDukahsmom/careerWebsite" target="_blank">HERE?</a></span>
                 </div>
             </div>
         </div>
+        <!-- Ticker End -->
 
+        <!-- Navbar Start -->
         <div class="row topRow text-center">
 
             <div class="col-3"></div>
@@ -108,6 +108,7 @@
             <div class="col-3"></div>
 
         </div>
+        <!-- Navbar End -->
 
         <br>
         <br>
@@ -197,14 +198,35 @@
         <div class="row text-center">
             <h2 class="openSourceText">Open Sourced Website on <strong class="githubText">Github</strong> <img
                     src="images/githubLogo.jpg" width="35" alt="Logo for Github, an online repository service"
-                    class="githubLogo"> <a href="https://github.com/OfiicialDukahsmom/careerWebsite" target="_blank">here</a></h2>
+                    class="githubLogo"> <a href="https://github.com/OfiicialDukahsmom/careerWebsite"
+                    target="_blank">here</a></h2>
         </div>
 
     </div>
 
+    <!-- Toast Start -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img id="profile-image" src="handled by toastLogic.js" class="me-2 rounderImage"
+                    alt="handled by toastLogic.js" width="35">
+                <strong class="me-auto" id="my-name">Handled by toastLogic.js</strong>
+                <small id="minutes-ago">toastLogic.js handles this</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toast-message">
+                toastLogic.js handles This
+            </div>
+        </div>
+    </div>
+    <!-- Toast End -->
+
 
     <!-- Optional Bootstrap javascript tag -->
     <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- Script for toasts to Work -->
+    <script src="js/toastLogic.js"></script>
 
 
     <!-- Javascript for my debugger -->
@@ -216,3 +238,5 @@
     <script src="js/highlightFlash.js"></script>
     <script src="js/textSlider.js"></script>
 </body>
+
+</html>
